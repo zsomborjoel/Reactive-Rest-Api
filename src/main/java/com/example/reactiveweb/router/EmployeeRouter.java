@@ -2,6 +2,7 @@ package com.example.reactiveweb.router;
 
 import com.example.reactiveweb.handler.EmployeeHandler;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
@@ -15,7 +16,7 @@ import reactor.core.publisher.Mono;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
-@Component
+@Configuration
 public class EmployeeRouter {
 
     @Bean
