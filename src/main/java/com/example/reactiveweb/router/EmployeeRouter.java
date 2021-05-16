@@ -20,7 +20,7 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 public class EmployeeRouter {
 
     @Bean
-    public RouterFunction<ServerResponse> productListing(EmployeeHandler employeeHandler) {
+    public RouterFunction<ServerResponse> employeeListing(EmployeeHandler employeeHandler) {
         return RouterFunctions
                 .route(RequestPredicates.GET("/employee").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), employeeHandler::handleEmployee);
     }

@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 
 @Data
+@NoArgsConstructor
 public class Employee {
 
     @Id

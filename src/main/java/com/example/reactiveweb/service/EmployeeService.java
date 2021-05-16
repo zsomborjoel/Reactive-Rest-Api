@@ -12,8 +12,6 @@ import reactor.core.publisher.Flux;
 @Service
 public class EmployeeService {
 
-    private static final Logger log = LoggerFactory.getLogger(EmployeeService.class);
-
     @Autowired
     private EmployeeRepository employeeRepository;
 
